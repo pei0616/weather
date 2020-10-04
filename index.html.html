@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>各縣市36小時天氣預報查詢</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="icon" href="images/icon.ico">
+</head>
+<body>
+    <div class="bgImg ">
+        <div class="container">
+          <h1 class="text-light">各縣市36小時天氣預報資料</h1>
+          <p>請在下方輸入您想查詢的<strong class="text-strong ">縣市名稱</strong></p>
+          <form>
+            <div class="form_group">
+              <input id="input_answer" class=" col-md-7 col-7  border-white" type="text" placeholder="ex.台北市、宜蘭縣......">
+            </div>
+          </form>
+          <button id="findButton" type="submit" name="submit" class="btn btn-info border-btn">查詢</button>
+          <div class="alert-group ">
+              <div id="success" class="alert alert-success">查詢成功</div>
+              <div id="fail" class="alert alert-danger">沒有搜尋到此縣市</div>
+              <div id="empty" class="alert alert-danger">請輸入要查詢的縣市</div>
+          </div>
+      </div>
+  </div>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/air.js"></script>
+</body>
+</html>
