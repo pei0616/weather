@@ -1,0 +1,13 @@
+//~指向resolve.modules路徑的模組
+/*必須加入的*/
+@import "~bootstrap/scss/functions";
+@import "helpers/variables";
+@import "~bootstrap/scss/mixins";
+/*Bootstrap主檔案*/
+@import "~bootstrap/scss/bootstrap";
+
+@import "variables";
+@import "mixin";
+@import "reset";
+@import "layout";
+@import "utility";

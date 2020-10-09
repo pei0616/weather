@@ -1,10 +1,18 @@
-const api = 'https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-B6C45ABA-EC1C-4318-B1D1-37436A0CCB0B';
+//將檔案一起打包
+import './scss/all.scss';
+//查看resolve.modules指向的路徑是否有此模組，如果沒有設置resolve.modules，則預設配置為指向 node_modules 資料夾內
+import 'jquery';
+import 'bootstrap/dist/js/bootstrap.bundle.js';//可載入bootstrap.js和Popper.js
+//bootstrap預設的載入路徑為bootstrap/dist/js/bootstrap.js，就沒有包含Popper.js
+/*支援IE*/
+import 'promise-polyfill/src/polyfill';
+import 'whatwg-fetch';
 
 $('#findButton').on('click',(e)=>{
     e.preventDefault();
     $('.alert').css('display','none');
     if($('#input_answer').val() !==""){
-        fetch(api)
+        window.fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-B6C45ABA-EC1C-4318-B1D1-37436A0CCB0B')
         .then((response)=>{
             console.log(response);
             if(response.ok){
@@ -38,5 +46,7 @@ $('#findButton').on('click',(e)=>{
     }
 })
 
+console.log(process.env);
+console.log(process.env.NODE_ENV);
 
 

@@ -1,2 +1,2 @@
-.vscode
-*.map
+dist
+node_modules

@@ -1,0 +1,42 @@
+{
+  "name": "fetch",
+  "version": "1.0.0",
+  "description": "window.fetch-polyfill",
+  "main": "src/air.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.dev.conf.js",
+    "dev": "webpack --config ./webpack.dev.conf.js",
+    "build": "webpack --config ./webpack.prob.conf.js"
+  },
+  "author": "pei",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "promise-polyfill": "8.1.3",
+    "whatwg-fetch": "^3.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "autoprefixer": "^10.0.1",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.3.0",
+    "file-loader": "^6.1.0",
+    "html-loader": "^1.3.1",
+    "html-webpack-plugin": "^4.5.0",
+    "image-webpack-loader": "^7.0.1",
+    "mini-css-extract-plugin": "^0.12.0",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "postcss-loader": "^4.0.3",
+    "sass-loader": "^10.0.2",
+    "terser-webpack-plugin": "^4.2.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.2.0"
+  }
+}
