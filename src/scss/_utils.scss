@@ -1,0 +1,22 @@
+//text
+.text-strong{
+    text-shadow: 0 0 5px #eee;
+    color:lighten(blue,10%);
+}
+
+//border
+.input-border
+{
+    border:1px solid #fff;
+}
+
+.btn{
+    background-color:#fff;
+}
+
+.btn-border{
+    border-color:$border-color;
+}
+
+
+

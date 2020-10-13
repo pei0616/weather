@@ -1,5 +1,29 @@
-@mixin grIpad{
+/*RWD*/
+@mixin small-devices{
+    @media (min-width:576px){
+        @content;
+    }
+}
+
+@mixin tablets{
     @media (min-width:768px){
         @content;
     }
 }
+
+@mixin desktop{
+    @media (min-width:992px){
+        @content;
+    }
+}
+
+@mixin itTablets{
+    @media(max-width: 767.98px){
+        @content;
+    }
+}
+
+@import 'mixins/clearfix';//清除浮動
+@import 'mixins/triangle';//border畫三角形
+@import 'mixins/replace-text';//圖片取代文字
+@import 'mixins/email-href';//點選email圖示寄信

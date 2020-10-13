@@ -5,18 +5,18 @@
    height:100vh;
    .container{
        text-align:center;
-        h1{
+        .container_title{
             font-size: 30px;
             margin:auto;
             padding-top:10%;
-            @include grIpad{
+            @include tablets{
                 font-size: 50px;
             }
         }
-        p{
+        .container_inquire{
             margin-top:30px;
             font-size:20px; 
-            @include grIpad{
+            @include tablets{
                 font-size:30px;
             }
         }
@@ -28,7 +28,7 @@
             width:80%;
             margin:auto;
             margin-top:20px;
-            @include grIpad{
+            @include tablets{
                 width:40%;
                 margin-top:30px;
             }

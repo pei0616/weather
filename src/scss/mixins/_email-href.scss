@@ -1,0 +1,11 @@
+@mixin email-href($url){
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    background-image: url($url);
+    background-position: center;
+    background-size: 70%;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+  }

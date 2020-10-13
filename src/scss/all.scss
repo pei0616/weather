@@ -6,8 +6,7 @@
 /*Bootstrap主檔案*/
 @import "~bootstrap/scss/bootstrap";
 
-@import "variables";
+/*@import "reset";bootstrap內以含有normalize.css*/
 @import "mixin";
-@import "reset";
 @import "layout";
-@import "utility";
+@import "utils";

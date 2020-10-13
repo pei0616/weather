@@ -1,0 +1,14 @@
+@mixin triangle($top,$right,$bottom,$left,$borderColor){
+    border-width:$top $right $bottom $left;
+    border-style:solid;
+    @if $top == 0 {
+        border-color:transparent transparent $borderColor transparent
+    }
+    @else if $right == 0{
+        border-color:transparent transparent  transparent $borderColor;
+    }@else if $bottom == 0{
+        border-color:$borderColor transparent transparent  transparent ;
+    } @else{
+        border-color: transparent $borderColor transparent  transparent ;
+    }
+}

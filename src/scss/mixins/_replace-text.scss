@@ -1,0 +1,6 @@
+@mixin replace-text($url){
+    background-image:url($url);
+    text-indent: 110%;//強迫文字縮排至原本的區域外
+    white-space: nowrap;//段落中的文字不得進行換行，常用於避免字數過多時自動換行導致閱讀效果變差
+    overflow: hidden;//將超出範圍的內容隱藏
+}
